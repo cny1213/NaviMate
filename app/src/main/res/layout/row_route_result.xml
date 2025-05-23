@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- 경로 요약 -->
+        <TextView
+            android:id="@+id/textViewSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="경로 1"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDuration"
+            app:layout_constraintHorizontal_bias="0"/>
+
+        <!-- 소요 시간 -->
+        <TextView
+            android:id="@+id/textViewDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1시간 23분"
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintTop_toTopOf="@id/textViewSummary"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- 구분선 -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/textViewSummary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <!-- 상세 설명 -->
+        <TextView
+            android:id="@+id/textViewExplan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="걷기 5분: 역 앞 광장\n버스 10분: 100번 버스 이용 후 하차"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:lineSpacingExtra="4dp"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

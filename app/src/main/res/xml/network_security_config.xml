@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 디버그/개발 중에만 허용하려면 AndroidManifest에 android:debuggable="true" 와 함께 사용하세요 -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- 에뮬레이터 로컬호스트 -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">192.168.0.83</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>

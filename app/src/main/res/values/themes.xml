@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NaviMate" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Customize your light theme here. -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimary">@color/colorMainBlue</item>
+    </style>
+
+    <style name="Theme.NaviMate" parent="Base.Theme.NaviMate" />
+
+    <!--splash screan theme-->
+<!--    <style name="AppTheme.Splash" parent="Theme.SplashScreen">-->
+<!--        <item name="windowSplashScreenBackground">@color/white</item>-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>-->
+<!--        <item name="windowSplashScreenAnimationDuration">1000</item>-->
+<!--        <item name="postSplashScreenTheme">@style/Theme.NaviMate</item>-->
+<!--    </style>-->
+</resources>

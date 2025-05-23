@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorMainBlue">#3280C3</color>
+    <color name="colorSubBlue1">#1e4c75</color>
+    <color name="colorSubBlue2">#3280C3</color>
+    <color name="bottomsheet_bg">#EDF1F5</color>
+    <color name="bottomsheet_bg_t">#d5d8dc</color>
+</resources>
